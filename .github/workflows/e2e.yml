@@ -33,7 +33,7 @@ jobs:
       - name: Start Streamlit app
         run: |
           nohup streamlit run app.py --server.headless true --server.address 127.0.0.1 --server.port 8501 > streamlit.log 2>&1 &
-          sleep 20
+          sleep 40
 
       - name: Show Streamlit log
         run: cat streamlit.log || true
@@ -42,4 +42,4 @@ jobs:
         run: curl -I http://127.0.0.1:8501
 
       - name: Run E2E tests
-        run: pytest tests/e2e/test_streamlit_app.py -m e2e -v
+        run: pytest tests/e2e/test_streamlit_app.py -m e2e -v -s
