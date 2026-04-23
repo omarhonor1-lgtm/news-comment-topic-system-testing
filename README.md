@@ -1,14 +1,59 @@
-# News Comment Topic Analysis System
+# نظام تحليل مواضيع تعليقات الأخبار
 
-A Streamlit + BERTopic project for analyzing news comments and extracting discussion topics.
+هذا المشروع عبارة عن تطبيق باستخدام Streamlit و BERTopic لتحليل تعليقات الأخبار واستخراج المواضيع الموجودة فيها.
 
-## Testing Structure
+## عن المشروع
 
-- Unit Tests: `tests/unit`
-- Integration Tests: `tests/integration`
-- E2E Tests: `tests/e2e`
-- Performance Tests: `performance`
+هذا الريبو معمول من أجل تطبيق مفاهيم اختبار البرمجيات على مشروع حقيقي بدل مشروع وهمي، وفيه أكثر من نوع من الاختبارات حتى يتم التأكد من عمل النظام بشكل صحيح.
 
-## Status
 
-Testing setup in progress.
+
+## فكرة المشروع
+
+فكرة المشروع هي تحليل تعليقات الأخبار، ثم تنظيفها ومعالجتها، وبعد ذلك استخراج المواضيع باستخدام BERTopic، مع عرض النتائج من خلال واجهة بسيطة باستخدام Streamlit.
+
+## محتويات المشروع
+
+- `app.py`  
+الملف الرئيسي لتشغيل التطبيق
+
+- `core/`  
+يحتوي منطق المشروع الأساسي مثل تنظيف النصوص وبناء النموذج والتحليل
+
+- `tests/unit/`  
+اختبارات الوحدة
+
+- `tests/integration/`  
+اختبارات التكامل
+
+- `tests/e2e/`  
+اختبار الواجهة بشكل كامل
+
+- `performance/`  
+اختبار الأداء
+
+- `.github/workflows/`  
+ملفات الـ CI
+
+- `pytest.ini`  
+إعدادات pytest
+
+- `requirements.txt`  
+مكتبات تشغيل المشروع
+
+- `requirements-dev.txt`  
+مكتبات التطوير والاختبار
+
+## أنواع الاختبارات الموجودة
+
+- اختبارات وحدة داخل `tests/unit`
+- اختبارات تكامل داخل `tests/integration`
+- اختبارات واجهة كاملة داخل `tests/e2e`
+- اختبارات أداء داخل `performance`
+
+## طريقة التثبيت
+
+أول شيء يتم تثبيت المكتبات:
+
+```bash
+python -m pip install -r requirements-dev.txt
