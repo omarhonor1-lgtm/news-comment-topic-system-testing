@@ -26,12 +26,15 @@
 
 - `tests/integration/`  
   اختبارات التكامل
+  ![نتيجة اختبار التكامل](doc/screenshots/integration_result.jpeg)
 
 - `tests/e2e/`  
   اختبار الواجهة بشكل كامل
+  ![نتيجة اختبار الواجهة](doc/screenshots/E2E_result.jpeg)
 
 - `performance/`  
   اختبار الأداء
+  ![نتيجة اختبار الأداء](doc/screenshots/locust_result.jpeg)
 
 - `.github/workflows/`  
   ملفات الـ CI
