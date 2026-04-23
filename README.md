@@ -120,6 +120,13 @@ performance/locustfile.py
 ```bash
 locust -f performance/locustfile.py
 ```
+## نتائج التغطية Coverage
+
+تم تنفيذ فحص التغطية باستخدام الأمر التالي:
+
+```bash
+pytest --cov=core --cov=tests
+
 
 ثم يتم فتح واجهة Locust ووضع الـ host بالشكل التالي:
 
